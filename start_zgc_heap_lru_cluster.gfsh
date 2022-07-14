@@ -1,0 +1,4 @@
+start locator --name=locator0
+start server --name=server0 --locators=localhost[10334] --initial-heap=1024m --max-heap=1024m --critical-heap-percentage=85 --eviction-heap-percentage=65 --J=-XX:+UseZGC --J=-Xlog:gc
+create region --name=testheaplru --type=PARTITION_HEAP_LRU
+disconnect
